@@ -1,1 +1,41 @@
 # HTML_Forms_Parkolohaz
+Projektfeladat – Parkolóház díjkalkulátor
+JavaScript projekt (4–5 tanóra)
+Feladat leírása
+Készíts egy egyszerű webes alkalmazást, amely egy parkolóház parkolási díját számolja ki a felhasználó által megadott adatok alapján.
+A program egy űrlapon keresztül kérje be a szükséges információkat, majd a végén írja ki a fizetendő összeget.
+1. Űrlap létrehozása (HTML + JavaScript)
+Az alkalmazás tartalmazzon egy „Parkolóház” nevű űrlapot, ahol a felhasználó kiválaszthatja:
+•	Parkolási zóna (3 különböző zóna)
+o	A zónákhoz különböző óradíjak tartozzanak (pl. A, B, C)
+•	Jármű típusa
+o	Személyautó
+o	Teherautó
+o	Kisbusz
+o	(további opciók is megadhatók)
+•	Parkolás időtartama
+o	Óra és perc megadásával
+2. Díjszámítás logika
+A program számolja ki a parkolás díját az alábbi szabály szerint:
+•	Az első óra az adott zóna alap óradíja
+•	Minden következő óra 10%-kal drágább, mint az előző
+Példa:
+1.	óra = 1000 Ft
+2.	óra = 1100 Ft
+3.	óra = 1210 Ft
+…
+A percet is figyelembe kell venni (arányosan).
+3. Eredmény megjelenítése
+A számítás végén jelenjen meg:
+•	a kiválasztott zóna
+•	a jármű típusa
+•	a parkolási idő
+•	a fizetendő végösszeg
+Extra lehetőségek (szorgalmi)
+•	kedvezmény bérleteseknek
+•	maximális napi díj bevezetése
+•	parkolójegy nyomtatása (szöveges blokkban)
+ Leadandó fájlok
+•	index.html
+•	style.css
+•	script.js
