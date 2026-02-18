@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Parkolóház Díjkalkulátor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Parkolóház Díjkalkulátor</h1>
+
+        <form id="parkingForm">
+            
+            <label for="zone">Parkolási zóna:</label>
+            <select id="zone" required>
+                <option value="">-- Válassz zónát --</option>
+                <option value="A">A zóna (1000 Ft/óra)</option>
+                <option value="B">B zóna (800 Ft/óra)</option>
+                <option value="C">C zóna (600 Ft/óra)</option>
+            </select>
+
+            <label for="vehicle">Jármű típusa:</label>
+            <select id="vehicle" required>
+                <option value="">-- Válassz járműtípust --</option>
+                <option value="Személyautó">Személyautó</option>
+                <option value="Teherautó">Teherautó</option>
+                <option value="Kisbusz">Kisbusz</option>
+            </select>
+
+            <label>Parkolási idő:</label>
+            <div class="time-input">
+                <input type="number" id="hours" min="0" placeholder="Óra" required>
+                <input type="number" id="minutes" min="0" max="59" placeholder="Perc" required>
+            </div>
+
+            <button type="submit">Díj kiszámítása</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
